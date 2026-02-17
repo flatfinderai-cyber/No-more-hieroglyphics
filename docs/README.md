@@ -1,13 +1,14 @@
-# Tech Jargon Translator - Documentation Index
+# No More Hieroglyphics - Documentation Index
 
-Welcome to the complete documentation for the Tech Jargon Translator mobile app! This index will help you find everything you need to build, deploy, and maintain the application.
+Welcome to the documentation for the No More Hieroglyphics technical dictionary web application. This index will help you find everything you need to understand, extend, and deploy the application.
 
 ---
 
 ## 📋 Quick Links
 
 - [Main README](../README.md) - Project overview and quick start
-- [Development Setup](DEVELOPMENT_SETUP.md) - Get your development environment ready
+- [Technical Dictionary](../index.html) - Main application
+- [Database Documentation](database/DATABASE_SETUP.md) - Dictionary database structure
 
 ---
 
@@ -15,108 +16,32 @@ Welcome to the complete documentation for the Tech Jargon Translator mobile app!
 
 New to the project? Start here:
 
-1. **[Development Setup](DEVELOPMENT_SETUP.md)** - Install prerequisites and set up your environment
-2. **[README](../README.md)** - Understand the project goals and architecture
-3. **[Database Setup](database/DATABASE_SETUP.md)** - Configure your database
-4. **[Authentication Setup](authentication/AUTHENTICATION_SETUP.md)** - Set up user authentication
+1. **[README](../README.md)** - Understand the project philosophy and design principles
+2. **Open `index.html`** - Launch the application in your browser
+3. **[Database Documentation](database/DATABASE_SETUP.md)** - Learn about the term database structure
+4. **[API Documentation](api/API_DOCUMENTATION.md)** - Backend API structure (if needed)
 
 ---
 
-## 📱 Mobile App Infrastructure
+## 🌐 Web Application Components
 
-### Core Services
+### Core Features
 
 #### [Database Setup](database/DATABASE_SETUP.md)
-Complete guide to database architecture, including:
-- Firebase Firestore configuration
-- Database schema and collections
-- Security rules
-- Indexing strategies
-- Data seeding
-- Backup and recovery
-- Performance optimization
-
-#### [Authentication Setup](authentication/AUTHENTICATION_SETUP.md)
-User authentication and authorization guide:
-- Firebase Authentication setup
-- Email/password authentication
-- Google Sign-In integration
-- Apple Sign-In (iOS)
-- Anonymous authentication
-- Account security
-- Session management
-- Protected routes
+Technical terms database structure:
+- Term schema and fields
+- Category organization
+- Search and indexing
+- Data seeding examples
+- Extensibility guidelines
 
 #### [API Documentation](api/API_DOCUMENTATION.md)
-Backend API structure and endpoints:
-- RESTful API design
-- Firebase Cloud Functions
-- Endpoint specifications
-- Authentication & authorization
+Backend API structure (optional):
+- RESTful endpoints for term lookup
+- Search functionality
+- Tone sanitization service
 - Error handling
-- Rate limiting
-- Example implementations
-
----
-
-## 💰 Monetization
-
-#### [Billing & Payments](billing/BILLING_SETUP.md)
-In-app purchases and subscriptions:
-- iOS In-App Purchases (Apple)
-- Android In-App Billing (Google Play)
-- Subscription tiers and pricing
-- Receipt verification
-- Webhook handlers
-- Payment UI components
-- Testing subscriptions
-
-#### [Advertising Setup](advertising/ADVERTISING_SETUP.md)
-Ad integration guide:
-- Google AdMob setup
-- Banner ads
-- Interstitial ads
-- Rewarded video ads
-- Ad mediation
-- GDPR/CCPA compliance
-- Revenue optimization
-
----
-
-## 📊 Publishing
-
-#### [App Store & Play Store Setup](app-stores/APP_STORE_SETUP.md)
-Publishing to app stores:
-- iOS App Store submission process
-- Google Play Store submission
-- App Store Optimization (ASO)
-- Screenshots and metadata
-- App Store compliance
-- Pre-launch checklist
-
----
-
-## 🚢 Deployment & Operations
-
-#### [Deployment Guide](deployment/DEPLOYMENT_GUIDE.md)
-Production deployment process:
-- Pre-deployment checklist
-- iOS deployment workflow
-- Android deployment workflow
-- Backend deployment (Firebase)
-- CI/CD pipeline setup
-- Rollback procedures
-- Post-launch monitoring
-
-#### [Analytics & Monitoring](analytics/ANALYTICS_SETUP.md)
-Track and monitor app performance:
-- Firebase Analytics setup
-- Crashlytics integration
-- Performance monitoring
-- Custom events tracking
-- A/B testing
-- User feedback collection
-- Privacy controls
+- Rate limiting guidelines
 
 ---
 
@@ -129,14 +54,12 @@ Privacy policy template covering:
 - Third-party services
 - Data retention
 - Security measures
-- International transfers
 
 #### [Terms of Service](legal/TERMS_OF_SERVICE.md)
 Terms of service template including:
 - User eligibility
-- Account terms
-- Subscription terms
-- User content policies
+- Usage terms
+- Content policies
 - Intellectual property
 - Disclaimers and liability
 - Dispute resolution
@@ -148,31 +71,13 @@ Terms of service template including:
 ```
 docs/
 ├── README.md                           # This file
-├── DEVELOPMENT_SETUP.md                # Dev environment setup
-│
-├── advertising/
-│   └── ADVERTISING_SETUP.md            # Ad integration
-│
-├── analytics/
-│   └── ANALYTICS_SETUP.md              # Analytics & monitoring
+├── DEVELOPMENT_SETUP.md                # Development guide (legacy)
 │
 ├── api/
-│   └── API_DOCUMENTATION.md            # Backend API docs
-│
-├── app-stores/
-│   └── APP_STORE_SETUP.md              # App Store publishing
-│
-├── authentication/
-│   └── AUTHENTICATION_SETUP.md         # User authentication
-│
-├── billing/
-│   └── BILLING_SETUP.md                # Payments & subscriptions
+│   └── API_DOCUMENTATION.md            # Backend API structure
 │
 ├── database/
-│   └── DATABASE_SETUP.md               # Database setup
-│
-├── deployment/
-│   └── DEPLOYMENT_GUIDE.md             # Deployment process
+│   └── DATABASE_SETUP.md               # Term database schema
 │
 └── legal/
     ├── PRIVACY_POLICY.md               # Privacy policy template
@@ -186,123 +91,132 @@ docs/
 ### For Developers
 
 **Setting up for the first time?**
-1. [Development Setup](DEVELOPMENT_SETUP.md)
-2. [Database Setup](database/DATABASE_SETUP.md)
-3. [Authentication Setup](authentication/AUTHENTICATION_SETUP.md)
+1. Clone the repository
+2. Open `index.html` in a browser
+3. Review the code in `app.js` and `styles.css`
 
-**Implementing features?**
-- [API Documentation](api/API_DOCUMENTATION.md) - Backend endpoints
-- [Database Setup](database/DATABASE_SETUP.md) - Data models
-- [Analytics Setup](analytics/ANALYTICS_SETUP.md) - Track events
+**Adding new terms?**
+- [Database Setup](database/DATABASE_SETUP.md) - Term schema and examples
+- Edit the `technicalTerms` object in `app.js`
 
-**Testing payments?**
-- [Billing Setup](billing/BILLING_SETUP.md) - In-app purchases
+**Customizing the design?**
+- Edit `styles.css` using the defined CSS variables
+- Maintain the color palette and border specifications
 
-### For Product/Business
+### For Content Contributors
 
-**Planning monetization?**
-1. [Billing Setup](billing/BILLING_SETUP.md) - Subscription strategy
-2. [Advertising Setup](advertising/ADVERTISING_SETUP.md) - Ad revenue
-
-**Preparing for launch?**
-1. [App Store Setup](app-stores/APP_STORE_SETUP.md) - Store listings
-2. [Privacy Policy](legal/PRIVACY_POLICY.md) - Legal compliance
-3. [Terms of Service](legal/TERMS_OF_SERVICE.md) - User agreement
-
-### For DevOps/Release
-
-**Deploying to production?**
-1. [Deployment Guide](deployment/DEPLOYMENT_GUIDE.md) - Release process
-2. [Analytics Setup](analytics/ANALYTICS_SETUP.md) - Monitoring
+**Adding technical terms?**
+1. Follow the term schema in `app.js`
+2. Provide accurate technical definitions
+3. Include practical applications
+4. Add relevant examples
+5. Maintain cultural neutrality
 
 ---
 
-## 📝 Additional Resources
+## 📝 Design Philosophy
 
-### Technology Stack
-- **Mobile Framework**: React Native 0.72+
-- **Backend**: Firebase (Authentication, Firestore, Functions, Hosting)
-- **Payments**: Apple IAP, Google Play Billing
-- **Advertising**: Google AdMob
-- **Analytics**: Firebase Analytics, Crashlytics
+### Core Principles
 
-### External Documentation
-- [React Native Docs](https://reactnative.dev/)
-- [Firebase Docs](https://firebase.google.com/docs)
-- [Apple Developer](https://developer.apple.com/)
-- [Google Play Console Help](https://support.google.com/googleplay/android-developer)
+1. **Direct Communication**: No conversational filler or meta-language
+2. **Technical Accuracy**: Definitions from authoritative sources
+3. **Professional Tone**: Strictly business-appropriate language
+4. **Cultural Neutrality**: Global accessibility without biases
+5. **Utility-First Design**: Zero decorative fluff
+6. **High Legibility**: Optimized typography for technical content
 
----
+### What We Avoid
 
-## 🤝 Contributing to Documentation
+- ❌ Condescending analogies
+- ❌ Emotional coaching language
+- ❌ "Friendly" illustrations without purpose
+- ❌ Meta-descriptors and redundant labeling
+- ❌ Bright emotional colors
+- ❌ Patronizing communication styles
 
-Found an error or want to improve the documentation?
+### What We Provide
 
-1. Edit the relevant markdown file
-2. Test your changes locally
-3. Submit a pull request
-4. Include clear description of changes
-
-### Documentation Guidelines
-- Use clear, simple language
-- Include code examples where relevant
-- Add screenshots for UI-related content
-- Keep examples up-to-date with dependencies
-- Test all commands and code snippets
+- ✅ Dictionary-style definitions
+- ✅ Technical accuracy
+- ✅ Practical applications
+- ✅ Professional aesthetic
+- ✅ Efficient information architecture
+- ✅ Split-pane comparison views
 
 ---
 
-## 💡 Need Help?
+## 💡 Design System
 
-Can't find what you're looking for?
+### Color Palette
 
-1. Search within documentation files
-2. Check the [main README](../README.md)
-3. Review [Development Setup](DEVELOPMENT_SETUP.md) for environment issues
-4. Open an issue on GitHub
-5. Contact: support@nomohieroglyphics.com
+- **Bright Snow** (#F9F9F9): Primary background
+- **Tech Charcoal** (#1A1A1B): Borders and primary text
+- **Primary Text** (#263238): Body text
+- **Hoodie Cobalt** (#215089): Active states, headers
+- **Tabby Gold** (#F57C00): Primary actions (buttons)
+- **Lively Yellow** (#FFD600): Highlights and accents
 
----
+### Typography
 
-## 📌 Document Versions
+- **Font Family**: Raleway
+- **Headers**: 900 weight (Black)
+- **Body**: 400-600 weight
+- **Numbers**: Old-style numerals enabled
+- **Line Height**: 1.6 for body text
 
-- **Last Updated**: February 2024
-- **App Version**: 1.0.0
-- **Documentation Version**: 1.0.0
+### Layout
 
----
-
-## ✅ Quick Checklists
-
-### New Developer Onboarding
-- [ ] Read main README
-- [ ] Complete development setup
-- [ ] Set up Firebase project
-- [ ] Run app on iOS/Android
-- [ ] Review API documentation
-- [ ] Understand database schema
-
-### Pre-Launch Checklist
-- [ ] All documentation reviewed
-- [ ] App Store listings complete
-- [ ] Privacy policy published
-- [ ] Terms of service published
-- [ ] Payments configured and tested
-- [ ] Analytics integrated
-- [ ] Crash reporting enabled
-- [ ] Performance monitored
-
-### Post-Launch Checklist
-- [ ] Monitor analytics dashboard
-- [ ] Review crash reports daily
-- [ ] Track user feedback
-- [ ] Monitor app store reviews
-- [ ] Check payment processing
-- [ ] Verify analytics data
-- [ ] Plan next update
+- **Container Width**: 1440px maximum
+- **Border Width**: 3px (hand-drawn aesthetic)
+- **Border Radius**: 4px
+- **Grid**: 12-column system
+- **Spacing Scale**: 8px, 16px, 24px, 32px, 48px
 
 ---
 
-**Happy Building! 🚀**
+## 📌 Quick Reference
 
-If you found this documentation helpful, please consider giving the project a star on GitHub!
+### File Structure
+
+```
+No-more-hieroglyphics/
+├── index.html          # Main application
+├── styles.css          # Design system
+├── app.js              # Logic and dictionary
+├── demo.html           # Standalone demo
+├── README.md           # Project overview
+└── docs/               # Documentation
+    ├── README.md       # This file
+    ├── database/       # Database docs
+    ├── api/            # API docs
+    └── legal/          # Legal templates
+```
+
+### Key Features
+
+1. **Direct Decode**: Split-pane jargon translation
+2. **Tone Sanitizer**: Remove emotional language
+3. **Jargon Dictionary**: Searchable term database
+
+---
+
+## 🤝 Contributing
+
+Contributions must maintain:
+- Technical accuracy from official documentation
+- Professional, neutral tone
+- Cultural neutrality
+- Design system consistency
+- Zero decorative elements
+
+---
+
+## 📞 Support
+
+For issues or questions:
+- **Issues**: [GitHub Issues](https://github.com/flatfinderai-cyber/No-more-hieroglyphics/issues)
+- **Documentation**: This directory
+
+---
+
+**Built for professionals who value precision over patronization.**

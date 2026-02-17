@@ -1,256 +1,211 @@
-# Tech Jargon Translator 🚀
+# No More Hieroglyphics
 
-> Transform terrible tech jargon into plain English - in a lighthearted way!
+> Technical Dictionary - Direct, Professional, No Fluff
 
-A mobile-first iOS and Android application that helps people understand technical terminology without needing a computer science degree.
+A desktop-first web application that translates complex technical jargon into precise, professional English without condescending analogies or emotional coaching.
 
-## 📱 Overview
+## Overview
 
-Tech Jargon Translator is your friendly companion for navigating the confusing world of technology terms. Whether you're a non-technical professional trying to understand developers, a student learning to code, or just curious about tech buzzwords, this app makes technology accessible to everyone.
+No More Hieroglyphics provides a neutral, high-accuracy technical dictionary and communication sanitizer for global professionals and non-technical stakeholders who interact with specialized technical teams.
 
-### Key Features
+### Core Features
 
-- 🔍 **Instant Search** - Find any tech term instantly
-- 💡 **Plain English Translations** - Clear, jargon-free explanations
-- 😄 **Funny Translations** - Lighthearted interpretations to make learning fun
-- 📚 **Real Examples** - See terms used in context
-- ⭐ **Favorites** - Save terms you reference frequently
-- 📱 **Offline Mode** - Access your favorites without internet (Pro)
-- 🎯 **Categories** - Browse by topic (Programming, Cloud, Networking, etc.)
-- 👥 **Community Contributions** - Submit and vote on translations (Premium)
+- **Direct Decode** - Split-pane translation of technical jargon with dual-view results (Technical Definition + Practical Application)
+- **Tone Sanitizer** - Removes emotional triggers, patronizing analogies, and culturally specific language from communications
+- **Jargon Dictionary** - Searchable database of technical terms with strictly technical definitions
 
-## 🎯 Target Audience
+### Design Principles
 
-- Non-technical professionals working with tech teams
-- Students learning programming and IT
-- Project managers and product managers
-- Anyone curious about technology
-- People transitioning into tech careers
+- **Utility-First**: Minimalist professional aesthetic with zero decorative fluff
+- **Business Professional**: Strictly neutral tone without emotional UI components
+- **Desktop-Optimized**: 1440px width, 12-column grid layout
+- **High-Precision**: Dictionary-style responses with no conversational filler
 
-## 💰 Monetization
+## Target Audience
 
-### Free Tier
-- Basic search functionality
-- Limited searches per day
-- Ad-supported
-- Access to standard translations
+Global professionals and non-technical stakeholders frustrated by tech jargon and patronizing communication styles in technical environments.
 
-### Pro ($2.99/month or $29.99/year)
-- Unlimited searches
-- Ad-free experience
-- Offline mode
-- Funny translations
-- Advanced examples
+## Technical Specifications
 
-### Premium ($4.99/month or $49.99/year)
-- All Pro features
-- Community contributions
-- Vote on translations
-- Early access to new features
-- Priority support
+### Platform
+- Desktop-first web application
+- Optimized for 1440px width
+- Responsive down to 1024px
 
-## 🏗️ Tech Stack
+### Platform
+- Desktop-first web application
+- Optimized for 1440px width
+- Responsive down to 1024px
 
-### Mobile App
-- **Framework**: React Native 0.72+
-- **Language**: JavaScript/TypeScript
-- **Navigation**: React Navigation
-- **State Management**: React Context + Hooks
-- **UI Components**: Custom components
+### Design System
 
-### Backend & Services
-- **Authentication**: Firebase Authentication
-- **Database**: Cloud Firestore
-- **Hosting**: Firebase Hosting
-- **Functions**: Firebase Cloud Functions
-- **Analytics**: Firebase Analytics
-- **Crash Reporting**: Firebase Crashlytics
+**Color Palette:**
+- Background: `#F9F9F9` (Bright Snow)
+- Borders: `#1A1A1B` (Tech Charcoal) - 3px width
+- Primary Text: `#263238`
+- Primary Actions: `#F57C00` (Tabby Gold)
+- Secondary Actions: `#215089` (Hoodie Cobalt)
+- Highlights: `#FFD600` (Lively Yellow)
 
-### Integrations
-- **Payments**: Apple In-App Purchases, Google Play Billing
-- **Advertising**: Google AdMob
-- **Push Notifications**: Firebase Cloud Messaging
+**Typography:**
+- Font Family: Raleway
+- Headers: 900 weight (Black)
+- Body: 400-600 weight
+- Numbers: Old-style numerals enabled
+- High-legibility sans-serif design
 
-## 📚 Documentation
+**Layout:**
+- 12-column grid system
+- Split-pane comparison views
+- 3-5px borders for "hand-drawn" aesthetic
+- Pill-shaped highlights for jargon terms
 
-Comprehensive documentation is available in the `/docs` directory:
+## Quick Start
 
-### Getting Started
-- [Development Setup](docs/DEVELOPMENT_SETUP.md) - Environment setup and installation
-- [API Documentation](docs/api/API_DOCUMENTATION.md) - Backend API reference
+### Local Development
 
-### Infrastructure Setup
-- [App Store & Play Store](docs/app-stores/APP_STORE_SETUP.md) - Publishing guides
-- [Database](docs/database/DATABASE_SETUP.md) - Database schema and setup
-- [Authentication](docs/authentication/AUTHENTICATION_SETUP.md) - User authentication
-- [Billing](docs/billing/BILLING_SETUP.md) - In-app purchases and subscriptions
-- [Advertising](docs/advertising/ADVERTISING_SETUP.md) - Ad integration
-
-### Deployment & Legal
-- [Deployment Guide](docs/deployment/DEPLOYMENT_GUIDE.md) - Production deployment
-- [Privacy Policy](docs/legal/PRIVACY_POLICY.md) - Privacy policy template
-- [Terms of Service](docs/legal/TERMS_OF_SERVICE.md) - Terms of service template
-
-## 🚀 Quick Start
-
-### Prerequisites
-- Node.js 18+
-- npm 9+
-- Xcode (for iOS development)
-- Android Studio (for Android development)
-
-### Installation
-
+1. Clone the repository:
 ```bash
-# Clone the repository
 git clone https://github.com/flatfinderai-cyber/No-more-hieroglyphics.git
 cd No-more-hieroglyphics
-
-# Install dependencies
-npm install
-
-# iOS setup
-cd ios && pod install && cd ..
-
-# Create .env file
-cp .env.example .env
-# Edit .env with your configuration
-
-# Run on iOS
-npm run ios
-
-# Run on Android
-npm run android
 ```
 
-For detailed setup instructions, see [Development Setup](docs/DEVELOPMENT_SETUP.md).
+2. Open `index.html` in a web browser:
+```bash
+# macOS
+open index.html
 
-## 📱 Project Structure
+# Linux
+xdg-open index.html
+
+# Windows
+start index.html
+```
+
+Or use a local server:
+```bash
+# Python 3
+python3 -m http.server 8000
+
+# Node.js (using npx)
+npx http-server -p 8000
+
+# Then visit http://localhost:8000
+```
+
+### Usage
+
+1. **Direct Decode**: Paste technical text → Click "Decode" → View technical and practical definitions
+2. **Tone Sanitizer**: Paste communication → Click "Sanitize" → Receive professionally neutral version
+3. **Jargon Dictionary**: Enter term → Click "Search" → View comprehensive definition
+
+## Project Structure
 
 ```
 No-more-hieroglyphics/
-├── android/              # Android native code
-├── ios/                  # iOS native code
-├── src/
-│   ├── components/       # Reusable UI components
-│   ├── screens/          # App screens
-│   ├── navigation/       # Navigation setup
-│   ├── services/         # API, Auth, Ads services
-│   ├── contexts/         # React contexts
-│   ├── hooks/            # Custom React hooks
-│   ├── utils/            # Utility functions
-│   ├── config/           # Configuration files
-│   ├── assets/           # Images, fonts, icons
-│   └── styles/           # Global styles
-├── docs/                 # Documentation
-├── __tests__/            # Test files
-├── .env                  # Environment variables (not committed)
-├── .gitignore
-├── package.json
-├── app.json
-└── README.md
+├── index.html          # Main application HTML
+├── styles.css          # Design system and styling
+├── app.js              # Application logic and dictionary
+├── README.md           # This file
+├── .gitignore          # Git exclusions
+└── docs/               # Additional documentation
+    ├── README.md       # Documentation index
+    ├── database/       # Database documentation
+    ├── api/            # API documentation
+    └── legal/          # Legal templates
 ```
 
-## 🧪 Testing
+## Features Detail
 
-```bash
-# Run unit tests
-npm test
+### Direct Decode
+- Split-pane interface with source on left, translation on right
+- Dual-view results: Technical Definition + Practical Application
+- Extracts and defines all recognized technical terms
+- No conversational filler or meta-language
 
-# Run with coverage
-npm test -- --coverage
+### Tone Sanitizer
+- Removes emotional coaching phrases ("breathe", "calm down")
+- Eliminates patronizing analogies ("think of it like...")
+- Strips culturally specific language
+- Maintains technical accuracy while improving professionalism
 
-# Run linter
-npm run lint
+### Jargon Dictionary
+- Searchable technical term database
+- Category-based organization (Programming, DevOps, Database, etc.)
+- Strict technical definitions from authoritative sources
+- Practical application context without oversimplification
 
-# Format code
-npm run format
+## Design Philosophy
+
+### What We Avoid
+- ❌ Condescending analogies
+- ❌ Emotional coaching or "soft" language
+- ❌ Decorative fluff or unnecessary visual elements
+- ❌ "Friendly" illustrations that add no value
+- ❌ Meta-descriptors like "Plain Natural Language Engine"
+- ❌ Bright emotional colors (reds, pastels)
+
+### What We Provide
+- ✅ Direct, dictionary-style definitions
+- ✅ Technical accuracy without oversimplification
+- ✅ Culturally neutral language
+- ✅ Professional, business-appropriate tone
+- ✅ Efficient information architecture
+- ✅ High-legibility typography
+
+## Expanding the Dictionary
+
+The technical terms database is located in `app.js`. To add new terms:
+
+```javascript
+'newterm': {
+    term: 'Display Name',
+    category: 'Category Name',
+    technical: 'Precise technical definition...',
+    practical: 'Real-world application...',
+    examples: ['Example 1', 'Example 2']
+}
 ```
 
-## 🚢 Deployment
+Categories: Programming, Database, DevOps, Architecture, Networking, Security, Cloud
 
-### iOS Deployment
-```bash
-# Build for production
-cd ios
-xcodebuild -workspace NoMoreHieroglyphics.xcworkspace \
-  -scheme NoMoreHieroglyphics \
-  -configuration Release \
-  archive
-```
+## Browser Support
 
-### Android Deployment
-```bash
-# Generate release bundle
-cd android
-./gradlew bundleRelease
-```
+- Chrome 90+
+- Firefox 88+
+- Safari 14+
+- Edge 90+
 
-For complete deployment instructions, see [Deployment Guide](docs/deployment/DEPLOYMENT_GUIDE.md).
+## Contributing
 
-## 🤝 Contributing
+Contributions should maintain the strict professional tone and utility-first design philosophy. All submissions must:
 
-We welcome contributions! Here's how you can help:
+1. Provide technically accurate definitions sourced from official documentation
+2. Avoid analogies, emotional language, or conversational filler
+3. Maintain cultural neutrality
+4. Follow the established design system
+5. Include no decorative or "friendly" elements
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+## License
 
-### Contribution Guidelines
-- Follow existing code style
-- Write tests for new features
-- Update documentation as needed
-- Keep commits focused and descriptive
+MIT License - See LICENSE file for details
 
-## 📄 License
+## Support
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 📞 Support
-
-- **Email**: support@nomohieroglyphics.com
-- **Website**: https://nomohieroglyphics.com
-- **Documentation**: See `/docs` directory
+For technical issues or dictionary additions:
 - **Issues**: [GitHub Issues](https://github.com/flatfinderai-cyber/No-more-hieroglyphics/issues)
+- **Documentation**: See `/docs` directory
 
-## 🗺️ Roadmap
+## Philosophy
 
-### Version 1.0 (Launch)
-- [x] Core search functionality
-- [x] User authentication
-- [x] Basic translations database
-- [x] Favorites feature
-- [x] Subscription system
-- [x] Ad integration
+This tool exists because technical communication should be:
+- **Direct**: No unnecessary steps or psychological interventions
+- **Neutral**: Free from cultural biases and emotional manipulation
+- **Accurate**: Preserving technical detail without oversimplification
+- **Professional**: Appropriate for global business contexts
 
-### Version 1.1
-- [ ] Offline mode improvements
-- [ ] Voice search
-- [ ] Share translations
-- [ ] Dark mode
-- [ ] Additional languages
-
-### Version 2.0
-- [ ] Community features
-- [ ] Gamification (badges, achievements)
-- [ ] AI-powered suggestions
-- [ ] Browser extension
-- [ ] Web app version
-
-## 🙏 Acknowledgments
-
-- Icons by [Heroicons](https://heroicons.com/)
-- Illustrations by [unDraw](https://undraw.co/)
-- Inspiration from everyone who's ever been confused by tech jargon
-
-## 📊 Status
-
-- **Development**: In Progress
-- **Beta Testing**: Planned Q2 2024
-- **Launch**: Planned Q3 2024
+No breathing exercises. No calming down. Just definitions.
 
 ---
 
-Made with ❤️ for everyone confused by technology
+**Built for professionals who value precision over patronization.**

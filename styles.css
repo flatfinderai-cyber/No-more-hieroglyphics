@@ -1,0 +1,473 @@
+/* ============================================
+   Color Palette
+   ============================================ */
+:root {
+    /* Primary Colors */
+    --bright-snow: #F9F9F9;
+    --tech-charcoal: #1A1A1B;
+    --primary-text: #263238;
+    
+    /* Mascot Accents */
+    --hoodie-cobalt: #215089;
+    --tabby-gold: #F57C00;
+    --lively-yellow: #FFD600;
+    
+    /* Spacing & Layout */
+    --container-width: 1440px;
+    --border-width: 3px;
+    --border-radius: 4px;
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 32px;
+    --spacing-xl: 48px;
+}
+
+/* ============================================
+   Base Styles
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bright-snow);
+    color: var(--primary-text);
+    font-size: 16px;
+    line-height: 1.6;
+    font-variant-numeric: oldstyle-nums;
+    overflow-x: hidden;
+}
+
+/* ============================================
+   Typography
+   ============================================ */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+    color: var(--tech-charcoal);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* ============================================
+   Layout
+   ============================================ */
+.app-container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: var(--spacing-md);
+    position: relative;
+}
+
+/* ============================================
+   Header
+   ============================================ */
+.header {
+    background: var(--bright-snow);
+    border-bottom: var(--border-width) solid var(--tech-charcoal);
+    padding: var(--spacing-md) 0;
+    margin-bottom: var(--spacing-lg);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 28px;
+    color: var(--tech-charcoal);
+}
+
+.nav {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.nav-btn {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--bright-snow);
+    color: var(--primary-text);
+    border: var(--border-width) solid var(--tech-charcoal);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.nav-btn:hover {
+    background: var(--hoodie-cobalt);
+    color: white;
+}
+
+.nav-btn.active {
+    background: var(--hoodie-cobalt);
+    color: white;
+}
+
+/* ============================================
+   Main Content
+   ============================================ */
+.main-content {
+    min-height: 600px;
+    position: relative;
+}
+
+.view {
+    display: none;
+}
+
+.view.active {
+    display: block;
+}
+
+/* ============================================
+   Split Pane Layout
+   ============================================ */
+.split-pane {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+.pane {
+    background: white;
+    border: var(--border-width) solid var(--tech-charcoal);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-md);
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pane-header {
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--tech-charcoal);
+}
+
+.pane-header h2 {
+    font-size: 20px;
+}
+
+/* ============================================
+   Input Elements
+   ============================================ */
+.input-field {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    padding: var(--spacing-sm);
+    border: 2px solid var(--tech-charcoal);
+    border-radius: var(--border-radius);
+    background: var(--bright-snow);
+    color: var(--primary-text);
+    resize: vertical;
+    flex: 1;
+    min-height: 350px;
+    margin-bottom: var(--spacing-md);
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: var(--hoodie-cobalt);
+    box-shadow: 0 0 0 2px rgba(33, 80, 137, 0.1);
+}
+
+.input-field::placeholder {
+    color: #888;
+}
+
+/* ============================================
+   Action Buttons
+   ============================================ */
+.action-btn {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background: var(--tabby-gold);
+    color: white;
+    border: var(--border-width) solid var(--tech-charcoal);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    align-self: flex-start;
+}
+
+.action-btn:hover {
+    background: #E86F00;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.action-btn:active {
+    transform: translateY(0);
+}
+
+/* ============================================
+   Output Display
+   ============================================ */
+.output-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.output-section {
+    padding: var(--spacing-sm);
+    background: var(--bright-snow);
+    border-radius: var(--border-radius);
+}
+
+.output-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--hoodie-cobalt);
+    margin-bottom: var(--spacing-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.output-text {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--primary-text);
+}
+
+.output-text.placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+/* ============================================
+   Dictionary View
+   ============================================ */
+.dictionary-container {
+    background: white;
+    border: var(--border-width) solid var(--tech-charcoal);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-lg);
+}
+
+.search-bar-container {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+}
+
+.search-field {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    padding: var(--spacing-sm) var(--spacing-md);
+    flex: 1;
+    border: var(--border-width) solid var(--tech-charcoal);
+    border-radius: var(--border-radius);
+    background: var(--bright-snow);
+    color: var(--primary-text);
+}
+
+.search-field:focus {
+    outline: none;
+    border-color: var(--tabby-gold);
+    box-shadow: 0 0 0 2px rgba(245, 124, 0, 0.1);
+}
+
+.search-btn {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background: var(--tabby-gold);
+    color: white;
+    border: var(--border-width) solid var(--tech-charcoal);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.search-btn:hover {
+    background: #E86F00;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.dictionary-results {
+    min-height: 400px;
+}
+
+.placeholder-text {
+    color: #888;
+    font-style: italic;
+    text-align: center;
+    padding: var(--spacing-xl);
+}
+
+.term-result {
+    background: var(--bright-snow);
+    border: 2px solid var(--tech-charcoal);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.term-title {
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--tech-charcoal);
+    margin-bottom: var(--spacing-sm);
+}
+
+.term-definition {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: var(--spacing-sm);
+}
+
+.term-category {
+    display: inline-block;
+    padding: 4px 12px;
+    background: var(--hoodie-cobalt);
+    color: white;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ============================================
+   Jargon Highlights (Pill Style)
+   ============================================ */
+.jargon-highlight {
+    display: inline-block;
+    padding: 2px 8px;
+    background: var(--lively-yellow);
+    color: var(--tech-charcoal);
+    border: 1px solid var(--tech-charcoal);
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* ============================================
+   Mascot Container
+   ============================================ */
+.mascot-container {
+    position: fixed;
+    bottom: var(--spacing-lg);
+    right: var(--spacing-lg);
+    z-index: 100;
+}
+
+.mascot-placeholder {
+    width: 150px;
+    height: 150px;
+    background: var(--bright-snow);
+    border: var(--border-width) solid var(--tech-charcoal);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.mascot-note {
+    font-size: 12px;
+    color: #888;
+    text-align: center;
+    padding: var(--spacing-sm);
+}
+
+/* ============================================
+   Floating Hieroglyphics Background
+   ============================================ */
+.hieroglyphics-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.hieroglyphics-bg .symbol {
+    position: absolute;
+    font-size: 48px;
+    color: var(--lively-yellow);
+    opacity: 0.15;
+    font-weight: 300;
+    animation: float 20s infinite ease-in-out;
+}
+
+.hieroglyphics-bg .symbol:nth-child(1) { top: 10%; left: 15%; animation-delay: 0s; }
+.hieroglyphics-bg .symbol:nth-child(2) { top: 25%; left: 75%; animation-delay: 2s; }
+.hieroglyphics-bg .symbol:nth-child(3) { top: 40%; left: 25%; animation-delay: 4s; }
+.hieroglyphics-bg .symbol:nth-child(4) { top: 55%; left: 85%; animation-delay: 6s; }
+.hieroglyphics-bg .symbol:nth-child(5) { top: 70%; left: 45%; animation-delay: 8s; }
+.hieroglyphics-bg .symbol:nth-child(6) { top: 15%; left: 55%; animation-delay: 1s; }
+.hieroglyphics-bg .symbol:nth-child(7) { top: 35%; left: 90%; animation-delay: 3s; }
+.hieroglyphics-bg .symbol:nth-child(8) { top: 60%; left: 10%; animation-delay: 5s; }
+.hieroglyphics-bg .symbol:nth-child(9) { top: 80%; left: 70%; animation-delay: 7s; }
+.hieroglyphics-bg .symbol:nth-child(10) { top: 50%; left: 60%; animation-delay: 9s; }
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-20px) rotate(5deg); }
+    50% { transform: translateY(0) rotate(0deg); }
+    75% { transform: translateY(20px) rotate(-5deg); }
+}
+
+/* ============================================
+   Responsive Adjustments
+   ============================================ */
+@media (max-width: 1440px) {
+    .app-container {
+        padding: var(--spacing-md);
+    }
+}
+
+@media (max-width: 1024px) {
+    .split-pane {
+        grid-template-columns: 1fr;
+    }
+    
+    .mascot-container {
+        display: none;
+    }
+}
+
+/* ============================================
+   Utility Classes
+   ============================================ */
+.hidden {
+    display: none !important;
+}
+
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}

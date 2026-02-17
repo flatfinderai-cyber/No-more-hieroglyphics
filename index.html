@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No More Hieroglyphics - Technical Dictionary</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">Technical Dictionary</h1>
+                <nav class="nav">
+                    <button class="nav-btn active" data-view="decode">Decode</button>
+                    <button class="nav-btn" data-view="sanitizer">Tone Sanitizer</button>
+                    <button class="nav-btn" data-view="dictionary">Dictionary</button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Direct Decode View -->
+            <section id="decode-view" class="view active">
+                <div class="split-pane">
+                    <div class="pane input-pane">
+                        <div class="pane-header">
+                            <h2>Source Input</h2>
+                        </div>
+                        <textarea 
+                            id="decode-input" 
+                            class="input-field"
+                            placeholder="Paste technical jargon, code, or complex terminology here..."
+                        ></textarea>
+                        <button id="decode-btn" class="action-btn">Decode</button>
+                    </div>
+                    <div class="pane output-pane">
+                        <div class="pane-header">
+                            <h2>Translation</h2>
+                        </div>
+                        <div id="decode-output" class="output-content">
+                            <div class="output-section">
+                                <h3 class="output-label">Technical Definition</h3>
+                                <p class="output-text placeholder">Enter text and click Decode to see results...</p>
+                            </div>
+                            <div class="output-section">
+                                <h3 class="output-label">Practical Application</h3>
+                                <p class="output-text placeholder">Everyday utility will appear here...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tone Sanitizer View -->
+            <section id="sanitizer-view" class="view">
+                <div class="split-pane">
+                    <div class="pane input-pane">
+                        <div class="pane-header">
+                            <h2>Original Communication</h2>
+                        </div>
+                        <textarea 
+                            id="sanitizer-input" 
+                            class="input-field"
+                            placeholder="Paste text containing emotional triggers, analogies, or patronizing language..."
+                        ></textarea>
+                        <button id="sanitizer-btn" class="action-btn">Sanitize</button>
+                    </div>
+                    <div class="pane output-pane">
+                        <div class="pane-header">
+                            <h2>Professional Version</h2>
+                        </div>
+                        <div id="sanitizer-output" class="output-content">
+                            <p class="output-text placeholder">Professionally neutral version will appear here...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dictionary View -->
+            <section id="dictionary-view" class="view">
+                <div class="dictionary-container">
+                    <div class="search-bar-container">
+                        <input 
+                            type="text" 
+                            id="dictionary-search" 
+                            class="search-field"
+                            placeholder="Search technical terms..."
+                        >
+                        <button id="search-btn" class="search-btn">Search</button>
+                    </div>
+                    <div id="dictionary-results" class="dictionary-results">
+                        <p class="placeholder-text">Enter a term to search the dictionary...</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Mascot Elements -->
+        <div class="mascot-container" id="mascot">
+            <div class="mascot-placeholder">
+                <!-- Mascot images will be placed here when provided -->
+                <div class="mascot-note">Mascot placeholder</div>
+            </div>
+        </div>
+
+        <!-- Floating Hieroglyphics Background -->
+        <div class="hieroglyphics-bg">
+            <span class="symbol">∫</span>
+            <span class="symbol">∂</span>
+            <span class="symbol">∑</span>
+            <span class="symbol">√</span>
+            <span class="symbol">π</span>
+            <span class="symbol">α</span>
+            <span class="symbol">β</span>
+            <span class="symbol">θ</span>
+            <span class="symbol">Δ</span>
+            <span class="symbol">λ</span>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
