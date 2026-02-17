@@ -44,6 +44,13 @@ iOS and Android Mobile App (React Native)
 
 ## 📚 Complete Documentation
 
+### 🎯 **START HERE**
+- **[📖 QUICK_START.md](./docs/QUICK_START.md)** - Complete 4-week implementation guide
+  - Account setup (Firebase, Stripe, App Store, Play Store)
+  - Code examples for auth & payments
+  - Revenue projections ($120K year 1)
+  - Launch checklist
+
 ### 🚀 Quick Start Guides
 - **[GitHub & Monetization Setup](./docs/GITHUB_MONETIZATION_GUIDE.md)** - How to manage repo & get paid
 - **[High-Converting Setup](./docs/monetization/HIGH_CONVERSION_SETUP.md)** - Maximum revenue optimization
@@ -82,6 +89,7 @@ iOS and Android Mobile App (React Native)
 
 ## 🚀 Quick Start
 
+### For Developers
 ```bash
 # Install
 npm install
@@ -91,6 +99,14 @@ cd ios && pod install && cd ..
 npm run ios     # iOS
 npm run android # Android
 ```
+
+### For Implementation
+**📖 [Start Here: QUICK_START.md](./docs/QUICK_START.md)**
+- Week-by-week roadmap
+- Complete code examples
+- Account setup instructions
+- Revenue projections
+- Launch checklist
 
 ## 🎨 Custom UI
 

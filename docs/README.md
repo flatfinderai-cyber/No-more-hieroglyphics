@@ -1,62 +1,181 @@
 # No More Hieroglyphics - Documentation Index
 
-Welcome to the documentation for the No More Hieroglyphics technical dictionary web application. This index will help you find everything you need to understand, extend, and deploy the application.
+Welcome to the documentation for the No More Hieroglyphics iOS and Android mobile app. This index will help you find everything you need to understand, implement, and monetize the application.
 
 ---
 
-## 📋 Quick Links
+## 🎯 **START HERE**
 
-- [Main README](../README.md) - Project overview and quick start
-- [Technical Dictionary](../index.html) - Main application
-- [Database Documentation](database/DATABASE_SETUP.md) - Dictionary database structure
-
----
-
-## 🚀 Getting Started
-
-New to the project? Start here:
-
-1. **[README](../README.md)** - Understand the project philosophy and design principles
-2. **Open `index.html`** - Launch the application in your browser
-3. **[Database Documentation](database/DATABASE_SETUP.md)** - Learn about the term database structure
-4. **[API Documentation](api/API_DOCUMENTATION.md)** - Backend API structure (if needed)
+### **[📖 QUICK_START.md](./QUICK_START.md)**
+**Complete 4-week implementation guide with code examples**
+- Week 1: Account setup (Firebase, Stripe, WalletConnect, App Store, Play Store)
+- Week 2: Authentication implementation (Wallet Connect, Google, Apple, GitHub)
+- Week 3: Payment integration (IAP, Stripe, crypto)
+- Week 4: Launch preparation and submission
+- Revenue projections: $120K ARR in year 1
+- Complete code examples for LoginScreen and PaywallScreen
 
 ---
 
-## 🌐 Web Application Components
+## 💰 Monetization & Revenue
 
-### Core Features
+### **[GitHub & Monetization Guide](./GITHUB_MONETIZATION_GUIDE.md)**
+How to manage the GitHub repository and monetize your app:
+- Open source code but paid to use
+- Multi-channel payment strategy
+- App Store & Play Store monetization
+- Backend protection strategies
+- Revenue optimization tips
+- Development workflow
+- Environment variables and security
 
-#### [Database Setup](database/DATABASE_SETUP.md)
-Technical terms database structure:
-- Term schema and fields
-- Category organization
-- Search and indexing
-- Data seeding examples
-- Extensibility guidelines
+### **[High-Conversion Setup](./monetization/HIGH_CONVERSION_SETUP.md)**
+Industry best practices for maximum conversion:
+- **Pricing model**: Free, Pro Monthly ($9.99), Pro Yearly ($79.99), Lifetime ($199.99)
+- **Auth priority**: Wallet Connect → Google → Apple → GitHub → Email
+- **Payment methods**: Apple Pay (68%), Crypto (55%), Cards (42%)
+- **Conversion tactics**: Social proof, scarcity, loss aversion, value anchoring
+- **A/B testing recommendations**
+- **Expected results**: 45% signup, 25% trial, 18% conversion
+- **Funnel metrics** and KPI tracking
+- **Regional pricing** strategies
 
-#### [API Documentation](api/API_DOCUMENTATION.md)
-Backend API structure (optional):
-- RESTful endpoints for term lookup
-- Search functionality
-- Tone sanitization service
+---
+
+## 🔐 Authentication
+
+### **[Wallet Connect Integration](./authentication/WALLET_CONNECT.md)**
+Web3 wallet authentication (MetaMask, Trust Wallet, Coinbase Wallet):
+- **Why first**: 40% higher conversion than email signup
+- **Installation**: React Native setup
+- **Frontend implementation**: Complete code examples
+- **Backend implementation**: Nonce generation, signature verification
+- **Security best practices**
+- **Supported wallets**: MetaMask, Trust Wallet, Rainbow, etc.
+- **Error handling** and user experience
+- **Production checklist**
+
+### [Authentication API](./authentication/AUTHENTICATION_API.md)
+Backend authentication system:
+- JWT-based authentication
+- OAuth2 integration (Google, Apple, GitHub)
+- Email/password fallback
+- Multi-factor authentication support
+- Rate limiting and security
+- Database schema
+
+---
+
+## 💳 Payment & Billing
+
+### [Billing API](./billing/BILLING_API.md)
+Payment processing and subscriptions:
+- **Stripe integration**: Cards, Apple Pay, Google Pay
+- **In-App Purchases**: iOS App Store, Google Play
+- **Crypto payments**: ETH, USDC (via Wallet Connect)
+- **Subscription management**: Plans, upgrades, cancellations
+- **Invoice generation**
+- **Usage tracking**
+- **Webhook handling**
+- **Receipt verification** (iOS & Android)
+
+---
+
+## 🏗️ Infrastructure
+
+### [Backend Architecture](./backend/BACKEND_ARCHITECTURE.md)
+Complete backend API specifications:
+- RESTful API endpoints
+- Authentication flow
+- Payment processing
+- Database integration
 - Error handling
-- Rate limiting guidelines
+- Rate limiting
+
+### [Database Setup](./database/DATABASE_SETUP.md)
+Firebase Firestore schema:
+- User data structure
+- Subscription management
+- Technical terms dictionary
+- Usage tracking
+- Indexing strategy
+
+### [App Stores](./app-stores/APP_STORE_API.md)
+iOS App Store and Google Play integration:
+- App submission process
+- In-app purchase setup
+- Subscription configuration
+- Review guidelines
+- Store optimization (ASO)
+
+### [Advertising](./advertising/ADVERTISING_SETUP.md)
+Google AdMob integration:
+- Ad unit setup
+- Banner ads, interstitials
+- Rewarded ads
+- Revenue optimization
+- GDPR compliance
+
+### [Analytics](./analytics/ANALYTICS_SETUP.md)
+Firebase Analytics and tracking:
+- Event tracking
+- User properties
+- Conversion funnels
+- Cohort analysis
+- Crashlytics integration
+
+### [Deployment](./deployment/DEPLOYMENT_GUIDE.md)
+Build and release process:
+- iOS build (Xcode, App Store Connect)
+- Android build (Android Studio, Play Console)
+- CI/CD setup
+- Version management
+- Beta testing
+
+---
+
+## 🎨 Design System
+
+### [Color Palette](../COLORS.md)
+Fresh Sky theme with complete specifications:
+- **Fresh Sky** (#00B0FF): Primary background
+- **Gold** (#FFD600): Highlights
+- **Vivid Tangerine** (#F57C00): Primary actions
+- **Dusk Blue** (#215089): Secondary actions
+- **Carbon Black** (#1A1A1B): Text & 3px borders
+- RGB, CMYK, HSB, HSL, Lab values
+- CSV, Array, Object, XML formats
+
+### [Theme Config](./THEME_CONFIG.md)
+Raleway font and styling:
+- Font weights: Regular, Medium, SemiBold, Bold, Black
+- Old-style numerals
+- Typography scale
+- Spacing system
+- Component styling
+
+### [Development Setup](./DEVELOPMENT_SETUP.md)
+Environment setup and configuration:
+- Prerequisites
+- Installation steps
+- Configuration files
+- Running locally
+- Troubleshooting
 
 ---
 
 ## ⚖️ Legal
 
-#### [Privacy Policy](legal/PRIVACY_POLICY.md)
-Privacy policy template covering:
+### [Privacy Policy](./legal/PRIVACY_POLICY.md)
+Privacy policy template:
 - Data collection practices
 - User rights (GDPR, CCPA)
 - Third-party services
 - Data retention
 - Security measures
 
-#### [Terms of Service](legal/TERMS_OF_SERVICE.md)
-Terms of service template including:
+### [Terms of Service](./legal/TERMS_OF_SERVICE.md)
+Terms of service template:
 - User eligibility
 - Usage terms
 - Content policies
@@ -70,153 +189,154 @@ Terms of service template including:
 
 ```
 docs/
-├── README.md                           # This file
-├── DEVELOPMENT_SETUP.md                # Development guide (legacy)
+├── README.md                              # This file
+├── QUICK_START.md                         # 4-week implementation guide ⭐
+├── GITHUB_MONETIZATION_GUIDE.md           # Repo management & monetization
 │
-├── api/
-│   └── API_DOCUMENTATION.md            # Backend API structure
+├── monetization/
+│   └── HIGH_CONVERSION_SETUP.md           # Revenue optimization
+│
+├── authentication/
+│   ├── WALLET_CONNECT.md                  # Web3 wallet integration
+│   └── AUTHENTICATION_API.md              # OAuth & JWT
+│
+├── billing/
+│   └── BILLING_API.md                     # Payment processing
+│
+├── backend/
+│   └── BACKEND_ARCHITECTURE.md            # API specifications
 │
 ├── database/
-│   └── DATABASE_SETUP.md               # Term database schema
+│   └── DATABASE_SETUP.md                  # Firestore schema
 │
-└── legal/
-    ├── PRIVACY_POLICY.md               # Privacy policy template
-    └── TERMS_OF_SERVICE.md             # Terms of service template
+├── app-stores/
+│   └── APP_STORE_API.md                   # iOS & Android publishing
+│
+├── advertising/
+│   └── ADVERTISING_SETUP.md               # AdMob integration
+│
+├── analytics/
+│   └── ANALYTICS_SETUP.md                 # Firebase Analytics
+│
+├── deployment/
+│   └── DEPLOYMENT_GUIDE.md                # Build & release
+│
+├── legal/
+│   ├── PRIVACY_POLICY.md                  # Privacy policy
+│   └── TERMS_OF_SERVICE.md                # Terms of service
+│
+├── THEME_CONFIG.md                        # Raleway font & styling
+└── DEVELOPMENT_SETUP.md                   # Environment setup
 ```
 
 ---
 
 ## 🎯 Common Tasks
 
-### For Developers
+### First-Time Setup
+1. **[Start with QUICK_START.md](./QUICK_START.md)** - Week-by-week guide
+2. Set up accounts (Firebase, Stripe, App Store, Play Store)
+3. Clone repository and install dependencies
+4. Configure environment variables
+5. Test authentication methods
+6. Test payment flows
 
-**Setting up for the first time?**
-1. Clone the repository
-2. Open `index.html` in a browser
-3. Review the code in `app.js` and `styles.css`
+### Implementing Authentication
+1. **[Read Wallet Connect guide](./authentication/WALLET_CONNECT.md)**
+2. Install dependencies (`@walletconnect/react-native-dapp`)
+3. Configure deep linking (iOS & Android)
+4. Implement LoginScreen with all auth methods
+5. Test each authentication flow
+6. Set up backend signature verification
 
-**Adding new terms?**
-- [Database Setup](database/DATABASE_SETUP.md) - Term schema and examples
-- Edit the `technicalTerms` object in `app.js`
+### Implementing Payments
+1. **[Read High-Conversion Setup](./monetization/HIGH_CONVERSION_SETUP.md)**
+2. Configure Stripe account and get API keys
+3. Set up Apple IAP and Google Play Billing
+4. Implement PaywallScreen
+5. Add trial flow (no card required)
+6. Test purchase verification
 
-**Customizing the design?**
-- Edit `styles.css` using the defined CSS variables
-- Maintain the color palette and border specifications
-
-### For Content Contributors
-
-**Adding technical terms?**
-1. Follow the term schema in `app.js`
-2. Provide accurate technical definitions
-3. Include practical applications
-4. Add relevant examples
-5. Maintain cultural neutrality
-
----
-
-## 📝 Design Philosophy
-
-### Core Principles
-
-1. **Direct Communication**: No conversational filler or meta-language
-2. **Technical Accuracy**: Definitions from authoritative sources
-3. **Professional Tone**: Strictly business-appropriate language
-4. **Cultural Neutrality**: Global accessibility without biases
-5. **Utility-First Design**: Zero decorative fluff
-6. **High Legibility**: Optimized typography for technical content
-
-### What We Avoid
-
-- ❌ Condescending analogies
-- ❌ Emotional coaching language
-- ❌ "Friendly" illustrations without purpose
-- ❌ Meta-descriptors and redundant labeling
-- ❌ Bright emotional colors
-- ❌ Patronizing communication styles
-
-### What We Provide
-
-- ✅ Dictionary-style definitions
-- ✅ Technical accuracy
-- ✅ Practical applications
-- ✅ Professional aesthetic
-- ✅ Efficient information architecture
-- ✅ Split-pane comparison views
+### Launching the App
+1. **[Review launch checklist](./QUICK_START.md#checklist)**
+2. Submit to App Store (7-10 days review)
+3. Submit to Google Play (2-5 days review)
+4. Set up analytics and monitoring
+5. Prepare customer support
+6. Launch marketing campaign
 
 ---
 
-## 💡 Design System
+## 📊 Expected Results
 
-### Color Palette
+### Conversion Benchmarks
+- **Signup rate**: 45% (downloads → signups)
+- **Trial start**: 25% (signups → trials)
+- **Trial conversion**: 18% (trials → paid)
+- **Overall**: 4.5% free-to-paid (45% × 25% × 18%)
 
-- **Bright Snow** (#F9F9F9): Primary background
-- **Tech Charcoal** (#1A1A1B): Borders and primary text
-- **Primary Text** (#263238): Body text
-- **Hoodie Cobalt** (#215089): Active states, headers
-- **Tabby Gold** (#F57C00): Primary actions (buttons)
-- **Lively Yellow** (#FFD600): Highlights and accents
+### Revenue Projections
 
-### Typography
+**Month 1:**
+- 1,000 downloads
+- 450 signups
+- 112 trial starts
+- 20 paying customers
+- **$1,600 revenue**
 
-- **Font Family**: Raleway
-- **Headers**: 900 weight (Black)
-- **Body**: 400-600 weight
-- **Numbers**: Old-style numerals enabled
-- **Line Height**: 1.6 for body text
+**Month 6:**
+- 10,000 total downloads
+- 1,125 trial starts
+- 202 paying customers
+- **$2,000 MRR**
 
-### Layout
-
-- **Container Width**: 1440px maximum
-- **Border Width**: 3px (hand-drawn aesthetic)
-- **Border Radius**: 4px
-- **Grid**: 12-column system
-- **Spacing Scale**: 8px, 16px, 24px, 32px, 48px
+**Month 12:**
+- 50,000 total users
+- 1,000 paying users (2%)
+- **$10,000 MRR**
+- **$120,000 ARR**
 
 ---
 
-## 📌 Quick Reference
+## 💡 Key Success Factors
 
-### File Structure
+### Authentication
+- **Wallet Connect first** (40% higher conversion)
+- **Google OAuth second** (3x higher than email)
+- **Apple Sign In** (required for iOS, 2.5x higher)
+- **Email/password last** (lowest conversion)
 
-```
-No-more-hieroglyphics/
-├── index.html          # Main application
-├── styles.css          # Design system
-├── app.js              # Logic and dictionary
-├── demo.html           # Standalone demo
-├── README.md           # Project overview
-└── docs/               # Documentation
-    ├── README.md       # This file
-    ├── database/       # Database docs
-    ├── api/            # API docs
-    └── legal/          # Legal templates
-```
+### Payments
+- **No credit card for trial** (+200% trial starts)
+- **7-day free trial** for monthly
+- **14-day free trial** for yearly
+- **Yearly plan emphasized** (33% discount, highest LTV)
 
-### Key Features
-
-1. **Direct Decode**: Split-pane jargon translation
-2. **Tone Sanitizer**: Remove emotional language
-3. **Jargon Dictionary**: Searchable term database
+### Conversion
+- **Social proof** ("10,000+ professionals")
+- **Scarcity** ("Limited lifetime licenses")
+- **Loss aversion** ("Don't lose your streak")
+- **Value anchoring** ("$6.67/month" not "$79.99/year")
 
 ---
 
 ## 🤝 Contributing
 
 Contributions must maintain:
-- Technical accuracy from official documentation
+- Technical accuracy
 - Professional, neutral tone
 - Cultural neutrality
-- Design system consistency
-- Zero decorative elements
+- Security best practices
+- Documentation updates
 
 ---
 
 ## 📞 Support
 
-For issues or questions:
 - **Issues**: [GitHub Issues](https://github.com/flatfinderai-cyber/No-more-hieroglyphics/issues)
 - **Documentation**: This directory
+- **Email**: support@nomohieroglyphics.com (set up)
 
 ---
 
-**Built for professionals who value precision over patronization.**
+**Built for professionals. Optimized for conversion. Ready to launch. 🚀**
