@@ -1,0 +1,52 @@
+{
+  "name": "nomohieroglyphics",
+  "version": "1.0.0",
+  "description": "iOS and Android app for translating technical jargon to plain English",
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "dependencies": {
+    "expo": "~49.0.0",
+    "expo-router": "^2.0.0",
+    "react": "18.2.0",
+    "react-native": "0.72.6",
+    "react-native-safe-area-context": "4.6.3",
+    "react-native-screens": "~3.22.0",
+    "@react-navigation/native": "^6.1.9",
+    "firebase": "^10.7.1",
+    "react-native-firebase": "^5.6.0",
+    "@stripe/stripe-react-native": "^0.35.0",
+    "react-native-iap": "^12.10.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@types/react": "~18.2.14",
+    "eslint": "^8.50.0",
+    "eslint-config-expo": "^7.0.0",
+    "jest": "^29.2.1",
+    "typescript": "^5.1.3"
+  },
+  "keywords": [
+    "react-native",
+    "ios",
+    "android",
+    "technical-dictionary",
+    "jargon-translator"
+  ],
+  "author": "NoMoreHieroglyphics Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flatfinderai-cyber/No-more-hieroglyphics.git"
+  },
+  "bugs": {
+    "url": "https://github.com/flatfinderai-cyber/No-more-hieroglyphics/issues"
+  },
+  "homepage": "https://nomohieroglyphics.com"
+}
