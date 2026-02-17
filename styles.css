@@ -3,14 +3,21 @@
    ============================================ */
 :root {
     /* Primary Colors */
-    --bright-snow: #F9F9F9;
-    --tech-charcoal: #1A1A1B;
+    --fresh-sky: #00B0FF;
+    --carbon-black: #1A1A1B;
     --primary-text: #263238;
     
-    /* Mascot Accents */
-    --hoodie-cobalt: #215089;
-    --tabby-gold: #F57C00;
-    --lively-yellow: #FFD600;
+    /* Accent Colors */
+    --dusk-blue: #215089;
+    --vivid-tangerine: #F57C00;
+    --gold: #FFD600;
+    
+    /* Legacy aliases for compatibility */
+    --bright-snow: #00B0FF; /* Now Fresh Sky */
+    --tech-charcoal: #1A1A1B; /* Now Carbon Black */
+    --hoodie-cobalt: #215089; /* Now Dusk Blue */
+    --tabby-gold: #F57C00; /* Now Vivid Tangerine */
+    --lively-yellow: #FFD600; /* Now Gold */
     
     /* Spacing & Layout */
     --container-width: 1440px;
@@ -34,7 +41,7 @@
 
 body {
     font-family: 'Raleway', -apple-system, BlinkMacSystemFont, sans-serif;
-    background-color: var(--bright-snow);
+    background-color: var(--fresh-sky);
     color: var(--primary-text);
     font-size: 16px;
     line-height: 1.6;
