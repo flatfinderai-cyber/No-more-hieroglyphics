@@ -1,0 +1,40 @@
+{
+  "name": "NoMoreHieroglyphics",
+  "displayName": "NoMoreHieroglyphics",
+  "expo": {
+    "name": "NoMoreHieroglyphics",
+    "slug": "nomohieroglyphics",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#00B0FF"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.nomohieroglyphics.app",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#00B0FF"
+      },
+      "package": "com.nomohieroglyphics.app",
+      "versionCode": 1
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "scheme": "nomohieroglyphics"
+  }
+}
