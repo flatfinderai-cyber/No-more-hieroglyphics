@@ -22,7 +22,13 @@
     "firebase": "^10.7.1",
     "react-native-firebase": "^5.6.0",
     "@stripe/stripe-react-native": "^0.35.0",
-    "react-native-iap": "^12.10.7"
+    "react-native-iap": "^12.10.7",
+    "@walletconnect/react-native-dapp": "^1.8.0",
+    "@react-native-async-storage/async-storage": "^1.19.0",
+    "react-native-get-random-values": "^1.9.0",
+    "@react-native-google-signin/google-signin": "^10.1.0",
+    "react-native-fbsdk-next": "^12.1.2",
+    "expo-apple-authentication": "^6.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

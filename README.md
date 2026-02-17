@@ -44,22 +44,39 @@ iOS and Android Mobile App (React Native)
 
 ## 📚 Complete Documentation
 
-### Setup & Configuration
-- [Color Palette](./COLORS.md) - All color specifications
-- [Theme Config](./docs/THEME_CONFIG.md) - Raleway font & styling
+### 🚀 Quick Start Guides
+- **[GitHub & Monetization Setup](./docs/GITHUB_MONETIZATION_GUIDE.md)** - How to manage repo & get paid
+- **[High-Converting Setup](./docs/monetization/HIGH_CONVERSION_SETUP.md)** - Maximum revenue optimization
 - [Development Setup](./docs/DEVELOPMENT_SETUP.md) - Environment setup
 
-### Infrastructure (Backend APIs)
-- [Authentication](./docs/authentication/AUTHENTICATION_API.md) - Login, OAuth, users
-- [Billing](./docs/billing/BILLING_API.md) - Subscriptions, IAP
-- [Database](./docs/database/DATABASE_SETUP.md) - Firestore schema
-- [App Stores](./docs/app-stores/APP_STORE_API.md) - iOS & Android
-- [Advertising](./docs/advertising/ADVERTISING_SETUP.md) - AdMob
-- [Analytics](./docs/analytics/ANALYTICS_SETUP.md) - Tracking
-- [Deployment](./docs/deployment/DEPLOYMENT_GUIDE.md) - Build & release
-- [Backend API](./docs/backend/BACKEND_ARCHITECTURE.md) - Complete API docs
+### 🎨 Design System
+- [Color Palette](./COLORS.md) - Fresh Sky theme with all color formats
+- [Theme Config](./docs/THEME_CONFIG.md) - Raleway font & styling guide
 
-### Legal
+### 🔐 Authentication (Highest Converting Methods)
+- **[Wallet Connect](./docs/authentication/WALLET_CONNECT.md)** - Web3 wallet integration (MetaMask)
+- [Authentication API](./docs/authentication/AUTHENTICATION_API.md) - OAuth, JWT, users
+  - Google OAuth (fastest)
+  - Apple Sign In (iOS required)
+  - GitHub OAuth (developer audience)
+  - Email/Password (fallback)
+
+### 💳 Payment & Billing
+- [Billing API](./docs/billing/BILLING_API.md) - Subscriptions, IAP, Stripe
+  - Apple In-App Purchases
+  - Google Play Billing
+  - Stripe (cards, Apple Pay, Google Pay)
+  - Crypto payments (USDC, ETH)
+
+### 🏗️ Infrastructure (Backend APIs)
+- [Backend Architecture](./docs/backend/BACKEND_ARCHITECTURE.md) - Complete API specs
+- [Database](./docs/database/DATABASE_SETUP.md) - Firestore schema
+- [App Stores](./docs/app-stores/APP_STORE_API.md) - iOS & Android publishing
+- [Advertising](./docs/advertising/ADVERTISING_SETUP.md) - AdMob integration
+- [Analytics](./docs/analytics/ANALYTICS_SETUP.md) - Firebase Analytics & tracking
+- [Deployment](./docs/deployment/DEPLOYMENT_GUIDE.md) - Build & release process
+
+### ⚖️ Legal
 - [Privacy Policy](./docs/legal/PRIVACY_POLICY.md)
 - [Terms of Service](./docs/legal/TERMS_OF_SERVICE.md)
 
